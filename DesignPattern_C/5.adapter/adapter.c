@@ -8,7 +8,7 @@ typedef struct Adaptee {
 }ADAPTEE_T;
 
 /* adaptee operation */
-void AdapterSpecificRequest(void)
+void AdapteeSpecificRequest(void)
 {
 	printf("adaptee specifig request\n\r");
 }
@@ -22,7 +22,7 @@ ADAPTEE_T* AdapteeCreate(void)
 	{
 		return NULL;
 	}
-	ptAdaptee->SpecificRequest = AdapterSpecificRequest;
+	ptAdaptee->SpecificRequest = AdapteeSpecificRequest;
 
 	return ptAdaptee;
 }
